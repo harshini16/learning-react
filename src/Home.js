@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BlogList from "./BlogList";
 const Home = () => {
     // let name = "aria";
 
@@ -22,10 +23,11 @@ const Home = () => {
     /* End of UseState Hook example */
 
     /*Outputting lists/blogs */
+    /*Outputting lists/blogs and then learning about props */
     const [blogs, setBlogs] = useState([
-        {title: 'My New website', body: 'lorem wei j fij ajfom aj', author: 'aemma', id: 1},
+        {title: 'My New website', body: 'lorem wei j fij ajfom aj', author: 'mario', id: 1},
         {title: 'My 2nd website', body: 'loremasbganetij ajfom aj', author: 'watson', id: 2},
-        {title: 'My 3rd website', body: 'lDVGsrjjmdf fij ajfom aj', author: 'dumbledore', id: 3}
+        {title: 'My 3rd website', body: 'lDVGsrjjmdf fij ajfom aj', author: 'mario', id: 3}
     ]);
 /*
     const handleCLickAgain = (name, e) => {
@@ -43,14 +45,19 @@ const Home = () => {
 
             {/* Outputing links/blogs , props */}
 
-            {blogs.map((blog)=> (
+            {/* {blogs.map((blog)=> (
                 <div className="blog-preview" key={blog.id}>
                     <h2>{blog.title}</h2>
                     <p>Written by {blog.author}</p>
                 </div>
-            ))}
+            ))} */}
 
             {/* End of Outputing links/blogs , props */}
+            {/* Using external component BlogList */}
+            <BlogList blogs={blogs} title="All blogs..!!!"/>
+            {/* Reusing components */}
+            <BlogList blogs={blogs.filter((blog)=> blog.author === 'mario')} title="Marios blogs..!!!"/>
+            {/* End of Reusing components */}
 
         </div>
 
