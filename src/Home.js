@@ -22,8 +22,13 @@ const Home = () => {
     */
     /* End of UseState Hook example */
 
+<<<<<<< HEAD
     /*Outputting lists/blogs */
     /*Outputting lists/blogs and then learning about props */
+=======
+    /*Outputting lists/blogs and then learning about props */
+    
+>>>>>>> 42dfcd90c7fb4ec77c984a0d3abb273da3751930
     const [blogs, setBlogs] = useState([
         {title: 'My New website', body: 'lorem wei j fij ajfom aj', author: 'mario', id: 1},
         {title: 'My 2nd website', body: 'loremasbganetij ajfom aj', author: 'watson', id: 2},
@@ -55,9 +60,12 @@ const Home = () => {
             {/* End of Outputing links/blogs , props */}
             {/* Using external component BlogList */}
             <BlogList blogs={blogs} title="All blogs..!!!"/>
+<<<<<<< HEAD
             {/* Reusing components */}
             <BlogList blogs={blogs.filter((blog)=> blog.author === 'mario')} title="Marios blogs..!!!"/>
             {/* End of Reusing components */}
+=======
+>>>>>>> 42dfcd90c7fb4ec77c984a0d3abb273da3751930
 
         </div>
 
