@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "My New website",
+      "body": " lorem wei j fij ajfom aj",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "My 2nd website",
+      "body": "loremasbganetij ajfom aj",
+      "author": "watson",
+      "id": 2
+    },
+    {
+      "title": "blog 4",
+      "body": "vj vrthis is hrw body of s ass funs dvhrvsd",
+      "author": "yousi",
+      "id": 4
+    },
+    {
+      "title": "blog trila wfn",
+      "body": "dsfkvn jdfb xcvjnf bsg\nq djaerignsdvd",
+      "author": "yousi",
+      "id": 6
+    }
+  ]
+}
